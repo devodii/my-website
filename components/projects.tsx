@@ -46,8 +46,8 @@ export function Projects() {
         "Shadcn UI",
       ],
       links: {
-        live: "https://school-designer-mrfu.vercel.app/",
-        github: "https://github.com/devodii/ClassyNotes",
+        live: "https://www.classynotes.app",
+        github: null,
       },
     },
     {
