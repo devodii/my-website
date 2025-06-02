@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { FaMedium } from "react-icons/fa";
+import { FaMedium, FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="size-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
 
@@ -32,7 +32,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              <FaMedium className="h-5 w-5" />
+              <FaMedium className="size-5" />
               <span className="sr-only">Medium</span>
             </Link>
 
@@ -42,7 +42,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              <Twitter className="h-5 w-5" />
+              <Twitter className="size-5" />
               <span className="sr-only">X</span>
             </Link>
 
@@ -52,8 +52,18 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              <Github className="h-5 w-5" />
-              <span className="sr-only">X</span>
+              <Github className="size-5" />
+              <span className="sr-only">Github</span>
+            </Link>
+
+            <Link
+              href={`https://api.whatsapp.com/send?phone=2347088654380&text=${encodeURIComponent("Hi Emmanuel")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <FaWhatsapp className="size-5" />
+              <span className="sr-only">Whatsapp</span>
             </Link>
           </div>
         </div>

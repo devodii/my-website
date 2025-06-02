@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Github, Linkedin, Mail } from "lucide-react";
 
 export function About() {
   return (
