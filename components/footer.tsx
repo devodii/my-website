@@ -1,18 +1,16 @@
-import Link from "next/link";
-import { Github, Linkedin, Twitter } from "lucide-react";
-import { FaMedium, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link"
+import { Github, Linkedin, Twitter } from "lucide-react"
+import { FaMedium, FaWhatsapp } from "react-icons/fa"
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="py-8 border-t">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <p className="text-muted-foreground">
-              © {currentYear} Emmanuel Odii. All rights reserved.
-            </p>
+            <p className="text-muted-foreground">© {currentYear} Emmanuel Odii. All rights reserved.</p>
           </div>
 
           <div className="flex items-center gap-4">
@@ -69,5 +67,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

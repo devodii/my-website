@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import * as Card from "@/components/ui/card"
+import * as Badge from "@/components/ui/badge"
 
 export function Experience() {
   const experiences = [
@@ -15,17 +15,7 @@ export function Experience() {
         "Built a 50+ page web application using Next.js and Tailwind CSS, serving 10,000+ users",
         "Developed a React Native/Expo mobile app styled with Tailwind CSS",
       ],
-      technologies: [
-        "Next.js",
-        "Nest.js",
-        "TypeORM",
-        "TypeScript",
-        "PostgreSQL",
-        "Docker",
-        "Tailwind CSS",
-        "React Native",
-        "Expo",
-      ],
+      technologies: ["Next.js", "Nest.js", "TypeORM", "TypeScript", "PostgreSQL", "Docker", "Tailwind CSS", "React Native", "Expo"],
     },
     {
       title: "Full Stack Developer",
@@ -47,17 +37,17 @@ export function Experience() {
 
         <div className="grid gap-8 max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
-            <Card key={index} className="border border-border">
-              <CardHeader>
+            <Card.Root key={index} className="border border-border">
+              <Card.Header>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                   <div>
-                    <CardTitle className="text-xl">{exp.title}</CardTitle>
-                    <CardDescription className="text-lg font-medium mt-1">{exp.company}</CardDescription>
+                    <Card.Title className="text-xl">{exp.title}</Card.Title>
+                    <Card.Description className="text-lg font-medium mt-1">{exp.company}</Card.Description>
                   </div>
-                  <CardDescription className="text-sm">{exp.period}</CardDescription>
+                  <Card.Description className="text-sm">{exp.period}</Card.Description>
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
+              </Card.Header>
+              <Card.Content className="space-y-4">
                 <ul className="list-disc pl-5 space-y-2">
                   {exp.description.map((item, i) => (
                     <li key={i} className="text-muted-foreground">
@@ -67,13 +57,13 @@ export function Experience() {
                 </ul>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {exp.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary">
+                    <Badge.Root key={i} variant="secondary">
                       {tech}
-                    </Badge>
+                    </Badge.Root>
                   ))}
                 </div>
-              </CardContent>
-            </Card>
+              </Card.Content>
+            </Card.Root>
           ))}
         </div>
       </div>

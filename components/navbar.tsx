@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import * as Button from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 
 export function Navbar() {
@@ -38,11 +38,7 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
+            <Link key={link.href} href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
               {link.label}
             </Link>
           ))}
@@ -51,9 +47,9 @@ export function Navbar() {
 
         <div className="md:hidden flex items-center">
           <ModeToggle />
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} className="ml-2">
+          <Button.Root variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} className="ml-2">
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          </Button.Root>
         </div>
       </div>
 

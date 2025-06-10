@@ -1,31 +1,28 @@
-import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { ImageResponse } from "next/og"
+import { readFile } from "node:fs/promises"
+import { join } from "node:path"
 
-export const alt = "Emmanuel Odii - Full stack developer";
+export const alt = "Emmanuel Odii - Full stack developer"
 
 export const size = {
   width: 1200,
   height: 630,
-};
+}
 
-export const contentType = "image/png";
+export const contentType = "image/png"
 
 export default async function OGImage() {
   const [regular, bold, profileImage] = await Promise.all([
     readFile(join(process.cwd(), "fonts/quicksand/static/regular.ttf")),
     readFile(join(process.cwd(), "fonts/quicksand/static/bold.ttf")),
     readFile(join(process.cwd(), "public/profile.png")),
-  ]);
+  ])
 
-  const profileImageBase64 = `data:image/png;base64,${profileImage.toString("base64")}`;
+  const profileImageBase64 = `data:image/png;base64,${profileImage.toString("base64")}`
 
   return new ImageResponse(
     (
-      <div
-        tw="w-full h-full flex items-center justify-center"
-        style={{ background: "hsl(0, 0%, 8%)" }}
-      >
+      <div tw="w-full h-full flex items-center justify-center" style={{ background: "hsl(0, 0%, 8%)" }}>
         <div tw="flex items-center justify-center w-full h-full px-16">
           {/* Profile Image */}
           <div tw="flex items-center justify-center mr-16">
@@ -76,6 +73,6 @@ export default async function OGImage() {
         { name: "Quicksand", data: regular, style: "normal", weight: 400 },
         { name: "Quicksand", data: bold, style: "normal", weight: 700 },
       ],
-    }
-  );
+    },
+  )
 }
