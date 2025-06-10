@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import * as Button from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowDown } from "lucide-react"
 
@@ -9,22 +9,21 @@ export function Hero() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">Emmanuel Odii</h1>
         <h2 className="text-xl md:text-2xl text-muted-foreground mb-8">Full Stack Developer</h2>
         <p className="max-w-2xl text-lg md:text-xl mb-10 text-muted-foreground">
-          Building quality software and collaborating with cross-functional teams. Specializing in Next.js, React
-          Native, and TypeScript.
+          Building quality software and collaborating with cross-functional teams. Specializing in Next.js, React Native, and TypeScript.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg">
+          <Button.Root asChild size="lg">
             <Link href="#projects">View My Work</Link>
-          </Button>
-          <Button asChild variant="outline" size="lg">
+          </Button.Root>
+          <Button.Root asChild variant="outline" size="lg">
             <Link href="#contact">Get In Touch</Link>
-          </Button>
+          </Button.Root>
         </div>
         <div className="mt-20 animate-bounce">
           <Link href="#about">
-            <Button variant="ghost" size="icon" className="rounded-full h-12 w-12">
+            <Button.Root variant="ghost" size="icon" className="rounded-full h-12 w-12">
               <ArrowDown className="h-6 w-6" />
-            </Button>
+            </Button.Root>
           </Link>
         </div>
       </div>
