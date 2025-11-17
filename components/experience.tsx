@@ -6,7 +6,7 @@ export function Experience() {
     {
       title: "Founding Engineer",
       company: "Tarot Master",
-      period: "September 2023 - Present",
+      period: "September 2023 - August 2025",
       description: [
         "Designed and built distributed monolithic server architecture for multiple domains using Nest.js and PostgreSQL",
         "Integrated Contentful CMS for prompt handling with dynamic variables",
