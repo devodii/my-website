@@ -12,9 +12,8 @@ export const size = {
 export const contentType = "image/png"
 
 export default async function OGImage() {
-  const [regular, bold, profileImage] = await Promise.all([
-    readFile(join(process.cwd(), "fonts/quicksand/static/regular.ttf")),
-    readFile(join(process.cwd(), "fonts/quicksand/static/bold.ttf")),
+  const [font, profileImage] = await Promise.all([
+    readFile(join(process.cwd(), "public/fonts/rosemary.ttf")),
     readFile(join(process.cwd(), "public/profile.png")),
   ])
 
@@ -69,10 +68,7 @@ export default async function OGImage() {
     ),
     {
       ...size,
-      fonts: [
-        { name: "Quicksand", data: regular, style: "normal", weight: 400 },
-        { name: "Quicksand", data: bold, style: "normal", weight: 700 },
-      ],
+      fonts: [{ name: "Rosemary", data: font, style: "normal", weight: 400 }],
     },
   )
 }
