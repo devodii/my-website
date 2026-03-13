@@ -15,8 +15,15 @@ const navLinks = [
 
 const experiences = [
   {
+    title: "Full Stack Developer",
+    company: "ChatARV (chatarv.ai)",
+    period: "November 2025 – Present",
+    summary:
+      "Reducing technical debts in every possible way, Improving typesafety of the codebase, shipping new features and A/B testing with posthog to improve retention (Next.js, Typescript, Supabase)",
+  },
+  {
     title: "Founding Engineer",
-    company: "Tarot Master",
+    company: "Tarot Master (tarotmaster.ai)",
     period: "Sept 2023 – Aug 2025",
     summary:
       "Built distributed backend (Nest.js, PostgreSQL), Contentful CMS, Stripe, OpenAI/Claude/Gemini streaming. Next.js web app (10k+ users), React Native/Expo app.",
@@ -39,11 +46,27 @@ const projects = [
     ],
   },
   {
+    title: "StellarTools",
+    description: "The financial infrastructure for the Stellar economy.",
+    links: [
+      { label: "stellartools.dev", href: "https://stellartools.dev" },
+      { label: "GitHub", href: "https://github.com/usepaykit/stellartools" },
+    ],
+  },
+  {
     title: "Tarot Master",
     description: "AI tarot reading platform. Web and Android app, thousands of users.",
     links: [
       { label: "tarotmaster.ai", href: "https://tarotmaster.ai" },
       { label: "Play Store", href: "https://play.google.com/store/apps/details?id=com.rodrigo.tarotmaster" },
+    ],
+  },
+  {
+    title: "50kb.lol",
+    description: "An opinionated image compressor that forces images under 50kb across multiple formats",
+    links: [
+      { label: "50kb.lol", href: "https://50kb.lol" },
+      { label: "GitHub", href: "https://github.com/devodii/50kb.lol" },
     ],
   },
 ]
