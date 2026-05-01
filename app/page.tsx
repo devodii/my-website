@@ -17,9 +17,9 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company: "ChatARV (chatarv.ai)",
-    period: "November 2025 – Present",
+    period: "November 2025 – April 2026",
     summary:
-      "Reducing technical debts in every possible way, Improving typesafety of the codebase, shipping new features and A/B testing with posthog to improve retention (Next.js, Typescript, Supabase)",
+      "Reducing technical debts in every possible way, Improving typesafety of the codebase, shipping new features and A/B testing with posthog to improve retention and drive revenue (Next.js, Typescript, Supabase)",
   },
   {
     title: "Founding Engineer",
