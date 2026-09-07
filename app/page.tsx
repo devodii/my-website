@@ -135,7 +135,7 @@ export default function Home() {
           <div className="min-w-0 text-center sm:text-left">
             <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Hi, I'm Emmanuel Odii</h1>
             <p className="mt-1 text-muted-foreground text-sm sm:text-base">
-              🏴‍☠️ 19yo cracked builder, 🦄 My goal is to simplify payments for the web.
+              🏴‍☠️ 20yo cracked builder, 🦄 Looking for a new challenge.
             </p>
             <div className="mt-3 flex justify-center gap-4 text-muted-foreground sm:justify-start">
               <a
