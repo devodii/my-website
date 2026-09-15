@@ -9,6 +9,7 @@ import { Button } from "@/components/button"
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "#stellar", label: "Stellar" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
 ]
@@ -52,6 +53,11 @@ const projects = [
       { label: "stellartools.dev", href: "https://stellartools.dev" },
       { label: "GitHub", href: "https://github.com/usepaykit/stellartools" },
     ],
+  },
+  {
+    title: "Sorokit",
+    description: "A toolkit for building on Stellar and Soroban, made to help developers move fast.",
+    links: [{ label: "sorokit.xyz", href: "https://sorokit.xyz" }],
   },
   {
     title: "Tarot Master",
@@ -134,9 +140,7 @@ export default function Home() {
           </Link>
           <div className="min-w-0 text-center sm:text-left">
             <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Hi, I'm Emmanuel Odii</h1>
-            <p className="mt-1 text-muted-foreground text-sm sm:text-base">
-              🏴‍☠️ 20yo cracked builder, 🦄 Looking for a new challenge.
-            </p>
+            <p className="mt-1 text-muted-foreground text-sm sm:text-base">🏴‍☠️ 20yo cracked builder, 🦄 Looking for a new challenge.</p>
             <div className="mt-3 flex justify-center gap-4 text-muted-foreground sm:justify-start">
               <a
                 href="https://github.com/devodii"
@@ -213,6 +217,37 @@ export default function Home() {
             to get a computer to code on.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">Since then I've shipped stuff like Tarot Master (12k+ users) and PayKit.</p>
+        </div>
+      </section>
+
+      <section id="stellar" className="py-6">
+        <div className="mx-auto max-w-2xl px-4">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">Stellar</h2>
+          <p className="text-sm text-muted-foreground">
+            I like to build on the Stellar blockchain. I have worked on projects such as{" "}
+            <a
+              href="https://sorokit.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline underline-offset-2 hover:no-underline"
+            >
+              Sorokit
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://stellartools.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline underline-offset-2 hover:no-underline"
+            >
+              StellarTools
+            </a>
+            .
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            I also try to help the community grow as much as I can. I do this by contributing to open source projects in the ecosystem and
+            giving code review feedback to other builders.
+          </p>
         </div>
       </section>
 
