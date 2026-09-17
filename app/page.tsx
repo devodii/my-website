@@ -226,6 +226,14 @@ export default function Home() {
           <p className="text-sm text-muted-foreground">
             I like to build on the Stellar blockchain. I have worked on projects such as{" "}
             <a
+              href="https://soroshares.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline underline-offset-2 hover:no-underline"
+            >
+              SoroShares
+            </a>{" "}
+            <a
               href="https://sorokit.xyz"
               target="_blank"
               rel="noopener noreferrer"
