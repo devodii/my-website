@@ -16,7 +16,7 @@ const story = {
   who: {
     label: "who i am",
     body: [
-      "i'm odii. i'm a 300 level computer science student here at uniport, just like many of you.",
+      "i'm odii. i'm 20, and a 300 level computer science student here at uniport, just like many of you.",
       "i started coding on an android phone. i didn't have a laptop. i was just curious about how apps worked, so i kept trying things until they made sense.",
       "that curiosity is still the main thing i have.",
     ],
